@@ -1,0 +1,43 @@
+<!--------------------------------------------------------------------------------------->
+<!-- Created by Faisal ------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------->
+<div class="container" [class.solution-dark-theme]="isDarkThemeActive">  
+	<div fxLayout="column" fxLayout.xs="column" fxLayoutAlign="space-around stretch" fxFill>
+	
+		<!-- Header ------------------------------------------------------------------------->
+		<div fxFlex="none">
+			<solution-header [angularVersion]="ngVersion" [materialVersion]="'2.0.0-beta.12'">
+			</solution-header>
+		</div>
+		<!----------------------------------------------------------------------------------->
+	  <mat-divider></mat-divider>
+  	<!-- Solution ----------------------------------------------------------------------->		
+    <mat-card fxFlex fxLayoutAlign="start center" fxLayout="column" class="solution"  
+              [style.borderRadius.px]="'0'" [style.paddingTop.px]="'60'">
+
+		  <!-- Solution to your problem here ------------------------------------------------>
+
+      <button mat-button>gaurav</button>
+      <form class="example-form">
+        <mat-form-field>
+          <input matInput placeholder="Favorite food" value="Sushi">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Another food" value="Big Mac">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="text" placeholder="One more food" value="French Fries">
+        </mat-form-field>
+      </form> 
+			<!--------------------------------------------------------------------------------->
+
+    </mat-card>
+	  
+		<!-- Footer ------------------------------------------------------------------------->
+		<div fxFlex="none">
+			<solution-footer></solution-footer> 
+		</div>
+		<!----------------------------------------------------------------------------------->
+    
+	</div>
+</div>
